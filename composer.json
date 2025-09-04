@@ -1,0 +1,31 @@
+{
+    "name": "laravel-theme-detector",
+    "description": "Automatic dark/light theme and browser detection for Laravel applications",
+    "type": "library",
+    "keywords": ["laravel", "theme", "dark-mode", "livewire", "browser-detection"],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "LaravelThemeDetector\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelThemeDetector\\ThemeServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0",
+        "jenssegers/agent": "^3.0",
+        "livewire/livewire": "^3.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0",
+        "phpunit/phpunit": "^10.0"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
